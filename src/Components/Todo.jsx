@@ -57,11 +57,11 @@ export const Todo = () => {
                     </div>
                     <button className='py-2 px-4 bg-blue-600 text-white hover:bg-blue-700 text-sm font-medium rounded-sm border-none' onClick={addtask} >ADD Task</button>
                 </div>
-                <p className='my-3 text-sm text-zinc-400 px-1'>Fill task details</p>
+                <p className='my-3 text-sm text-zinc-700 px-1'>Fill task details</p>
                 <div className='w-[30rem] bg-white shadow py-6 px-4'>
                     <fieldset>
                         <legend className='text-pink-400 font-medium'>List of task</legend>
-                        {TodoList.length === 0 ? (<p className='text-gray-400 text-sm py-2'>No Task found</p>) : (
+                        {TodoList.length === 0 ? (<p className='text-gray-900 text-sm py-2'>No Task found</p>) : (
                             TodoList.map((todo, index) => {
                                 return <TodoItems text={todo.task} Iscompleted={todo.Iscompleted} id={todo.id} toggleTask={toogleTask} delect={delectTask} />
                             })
